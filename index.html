@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather Forecast</title>
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel = 'stylesheet' href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel = 'stylesheet' href = "styles/style.css">
+        <link rel = 'stylesheet' href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    </head>
+    <body>  
+    <div class = 'container-fluid banner'>
+            <div class = 'jumbotron'>
+                <h1 class = 'display-2 tagname text-center'>Weather Forecaster</h1>
+                <div class = 'row'>
+                    <div class = 'col-md-12 div-text-search'>
+                        <form class = 'form-inline form-style' action = '' method = 'GET'>
+                            <input type = 'text'  placeholder = "Enter the city"  id = 'city' class = 'form-control' required />
+                            <button id = 'buttonClick' class= 'btn btn-default button-search'><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <div class = 'row results'>
+            <div class = 'col-md-2'>
+                
+            </div>
+            <div class = 'col-md-8'>
+               <h1 class = 'display-4 text-center' id = 'results_data'></h1>
+               <p class = 'lead' id = 'temp'></p> 
+               <p class = 'lead' id = 'weather'></p> 
+               <p class = 'lead' id = 'wind'></p> 
+               
+            </div>  
+            <div class = 'col-md-2'>
+            
+            </div>             
+        </div>
+    </div>
+    <script src = 'scripts/script.js'></script>
+    </body>
+</html>
